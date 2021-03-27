@@ -81,7 +81,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Muhammad Wildan Alviandi Munir<br>
+                    361955401008
                 </div>
 
                 <div class="links">
