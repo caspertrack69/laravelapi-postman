@@ -50,7 +50,7 @@
                         <h4 class="mb-0">
                             <span class="count">10468</span>
                         </h4>
-                        <p class="text-light">Members online</p>
+                        <p class="text-light">Member online</p>
 
                         <div class="chart-wrapper px-0" style="height:70px;" height="70">
                             <canvas id="widgetChart1"></canvas>
@@ -80,7 +80,7 @@
                         <h4 class="mb-0">
                             <span class="count">10468</span>
                         </h4>
-                        <p class="text-light">Members online</p>
+                        <p class="text-light">Member online</p>
 
                         <div class="chart-wrapper px-0" style="height:70px;" height="70">
                             <canvas id="widgetChart2"></canvas>
@@ -109,7 +109,7 @@
                         <h4 class="mb-0">
                             <span class="count">10468</span>
                         </h4>
-                        <p class="text-light">Members online</p>
+                        <p class="text-light">Member online</p>
 
                     </div>
 
@@ -138,7 +138,7 @@
                         <h4 class="mb-0">
                             <span class="count">10468</span>
                         </h4>
-                        <p class="text-light">Members online</p>
+                        <p class="text-light">Member online</p>
 
                         <div class="chart-wrapper px-3" style="height:70px;" height="70">
                             <canvas id="widgetChart4"></canvas>
@@ -229,8 +229,8 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-4">
-                                <h4 class="card-title mb-0">Traffic</h4>
-                                <div class="small text-muted">October 2017</div>
+                                <h4 class="card-title mb-0">Pendapatan</h4>
+                                <div class="small text-muted">April 2021</div>
                             </div>
                             <!--/.col-->
                             <div class="col-sm-8 hidden-sm-down">
@@ -238,13 +238,13 @@
                                 <div class="btn-toolbar float-right" role="toolbar" aria-label="Toolbar with button groups">
                                     <div class="btn-group mr-3" data-toggle="buttons" aria-label="First group">
                                         <label class="btn btn-outline-secondary">
-                                            <input type="radio" name="options" id="option1"> Day
+                                            <input type="radio" name="options" id="option1"> Hari
                                         </label>
                                         <label class="btn btn-outline-secondary active">
-                                            <input type="radio" name="options" id="option2" checked=""> Month
+                                            <input type="radio" name="options" id="option2" checked=""> Bulan
                                         </label>
                                         <label class="btn btn-outline-secondary">
-                                            <input type="radio" name="options" id="option3"> Year
+                                            <input type="radio" name="options" id="option3"> Tahun
                                         </label>
                                     </div>
                                 </div>
@@ -311,10 +311,10 @@
 
                         <div class="media">
                             <a href="#">
-                                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="public/images/admin.jpg">
+                                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="public/images/tugas1.jpg">
                             </a>
                             <div class="media-body">
-                                <h2 class="text-white display-6">Jim Doe</h2>
+                                <h2 class="text-white display-6">Wildan</h2>
                                 <p class="text-light">Project Manager</p>
                             </div>
                         </div>
@@ -341,7 +341,7 @@
                     <footer class="twt-footer">
                         <a href="#"><i class="fa fa-camera"></i></a>
                         <a href="#"><i class="fa fa-map-marker"></i></a>
-                        New Castle, UK
+                        Banyuwangi
                         <span class="pull-right">
                             32
                         </span>
@@ -356,7 +356,7 @@
                         <div class="stat-widget-one">
                             <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>
                             <div class="stat-content dib">
-                                <div class="stat-text">Total Profit</div>
+                                <div class="stat-text">Total Pendapatan</div>
                                 <div class="stat-digit">1,012</div>
                             </div>
                         </div>
@@ -371,7 +371,7 @@
                         <div class="stat-widget-one">
                             <div class="stat-icon dib"><i class="ti-user text-primary border-primary"></i></div>
                             <div class="stat-content dib">
-                                <div class="stat-text">New Customer</div>
+                                <div class="stat-text">Pelanggan baru</div>
                                 <div class="stat-digit">961</div>
                             </div>
                         </div>
@@ -385,7 +385,7 @@
                         <div class="stat-widget-one">
                             <div class="stat-icon dib"><i class="ti-layout-grid2 text-warning border-warning"></i></div>
                             <div class="stat-content dib">
-                                <div class="stat-text">Active Projects</div>
+                                <div class="stat-text">Projek Berjalan</div>
                                 <div class="stat-digit">770</div>
                             </div>
                         </div>

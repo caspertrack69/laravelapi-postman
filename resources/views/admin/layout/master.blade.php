@@ -16,6 +16,7 @@
     <!-- Left Panel -->
 
   @include('admin.layout.navigation')
+  
 
     <!-- Left Panel -->
 
