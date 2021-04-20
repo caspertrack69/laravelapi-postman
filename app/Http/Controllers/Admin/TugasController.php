@@ -29,6 +29,9 @@ class TugasController extends Controller
     public function create()
     {
         //
+        $data_kategori = kategori::all();
+        $pagename = 'Form Input Tugas';
+        return view('admin.tugas.create', compact('pagename', 'data_kategori'));
     }
 
     /**
