@@ -44,8 +44,15 @@
 
             <div class="col-md-12">
                 <div class="card">
+                @if(session()->get('sukses'))
+                    <div class="alert alert-success">
+                        {{session()->get('sukses')}}
+                    </div>
+
+                    @endif
                     <div class="card-header">
                         <strong class="card-title">{{$pagename}}</strong>
+                        <a href="{{route('tugas.create')}}" class="btn btn-primary pull-right">Tambah</a>
                     </div>
                     <div class="card-body">
                         <table id="bootstrap-data-table-export" class="table table-striped table-bordered">

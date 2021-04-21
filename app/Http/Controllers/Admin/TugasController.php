@@ -43,6 +43,21 @@ class TugasController extends Controller
     public function store(Request $request)
     {
         //
+        $request ->validate([
+            'nama_tugas'=>'required',
+            'optionid_kategori'=>'required',
+            'txtketerangan_tugas'=>'required',
+            'radiostatus_tugas'=>'required',
+        ]);
+        $data_tugas = new Task([
+            'nama_tugas'=> $request->get('nama_tugas'),
+            'id_kategori'=> $request->get('optionid_kategori'),
+            'ket_tugas'=> $request->get('txtketerangan_tugas'),
+            'status_tugas'=> $request->get('radiostatus_tugas'),
+        ]);
+        // dd($data_tugas);
+        $data_tugas->save();
+        return redirect('admin/tugas')->with('sukses','tugas berhasil didimpan');
     }
 
     /**

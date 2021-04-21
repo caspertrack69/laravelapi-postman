@@ -45,8 +45,10 @@
             <div class="col-lg-12">
 
                 <div class="card">
+
                     <div class="card-header">
                         <strong>{{$pagename}}</strong>
+                        
                     </div>
                     <div class="card-body card-block">
 
@@ -66,7 +68,7 @@
                             @csrf
                             <div class="row form-group">
                                 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Nama Tugas</label></div>
-                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="txtnama_tugas" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
+                                <div class="col-12 col-md-9"><input type="text" id="nama_tugas" name="txtnama_tugas" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
                             </div>
 
                             <div class="row form-group">
