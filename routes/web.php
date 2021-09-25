@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.index');
 });
 
 Auth::routes();
@@ -25,4 +25,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function(){
     Route::get('/','Admin\DashboardController@index');
     Route::resource('/kategori', 'Admin\KategoriController');
     Route::resource('/tugas', 'Admin\TugasController');
+    Route::resource('/roles', 'Admin\RoleController');
+    Route::resource('/users', 'Admin\UserController');
+    
 });

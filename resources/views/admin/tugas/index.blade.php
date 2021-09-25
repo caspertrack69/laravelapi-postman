@@ -51,7 +51,9 @@
 
                     <div class="card-header">
                         <strong class="card-title">{{ $pagename }}</strong>
+                        @can('tugas-create')
                         <a href="{{ route('tugas.create') }}" class="btn btn-primary pull-right">Tambah</a>
+                        @endcan
                     </div>
                     <div class="card-body">
                         <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
@@ -62,8 +64,10 @@
                                     <th>Kategori</th>
                                     <th>Keterangan</th>
                                     <th>Status</th>
+                                    @can('tugas')
                                     <th>Edit</th>
                                     <th>Hapus</th>
+                                    @endcan
                                 </tr>
                             </thead>
                             <tbody>
@@ -75,7 +79,10 @@
                                     <td>{{ $row->id_kategori }}</td>
                                     <td>{{ $row->ket_tugas }}</td>
                                     <td>{{ $row->status_tugas }}</td>
+                                    @can('tugas-edit')
                                     <td><a href="{{ route('tugas.edit', $row->id) }}" class="btn btn-primary">Edit</a></td>
+                                    @endcan
+                                    @can('tugas-delete')
                                     <td>
                                         <form action="{{ route('tugas.destroy', $row->id) }}" method="post">
                                             @csrf
@@ -83,6 +90,7 @@
                                             <button class="btn btn-danger" type="submit">Hapus</button>
                                         </form>
                                     </td>
+                                    @endcan
                                 </tr>
                                     
                                 @endforeach
