@@ -14,7 +14,7 @@ class AuthController extends Controller
     {
         $validateData = $request->validate([
             'name' => 'required|max:25',
-            'email' => 'email|required | unique:users',
+            'email' => 'email| required | unique:users',
             'password' => 'required | confirmed',
         ]);
 
@@ -24,7 +24,7 @@ class AuthController extends Controller
             'password' => bcrypt($request->password),
         ]);
 
-        $user->save;
+        $user->save();
 
         return response()->json($user, 201);
     }
@@ -32,15 +32,15 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $validateData = $request->validate([
-            'email' => 'email|required | unique:users',
-            'password' => 'required | confirmed',
+            'email' => 'email|required',
+            'password' => 'required',
         ]);
 
         $login_detail = request(['email', 'password']);
 
         if (!Auth::attempt($login_detail)) {
             return response()->json([
-                'error' => 'login gagal. cek lagi detail login'
+                'error' => 'login gagal. cek lagi detail login',
             ], 401);
         }
 
@@ -55,7 +55,7 @@ class AuthController extends Controller
             'token_id' => $token->id,
             'user_id' => $user->id,
             'name' => $user->name,
-            'email' => $user->email
+            'email' => $user->email,
         ], 200);
     }
 }
